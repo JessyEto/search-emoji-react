@@ -9,6 +9,8 @@ const Line = ({ search }) => {
             return elem;
           } else if (elem.title.toLowerCase().includes(search.toLowerCase())) {
             return elem;
+          } else {
+            return elem;
           }
         })
         .map((elem) => {
