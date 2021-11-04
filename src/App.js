@@ -1,11 +1,21 @@
-import "./App.css";
+import './App.css';
+import Line from './components/Line';
+import Search from './components/Search';
+import { useState } from 'react';
 
-function App() {
+const App = () => {
+  const [search, setSearch] = useState('');
+
+  const searchEmoji = (event) => {
+    setSearch(event.target.value);
+  };
+
   return (
-    <div>
-      Hello from <a href="https://www.lereacteur.io">Le Reacteur !</a>
+    <div className="container">
+      <Search searchEmoji={searchEmoji} />
+      <Line search={search} />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,1 +1,48 @@
 /* Other rules */
+
+h1 {
+  font-size: 40px;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 720px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* SEARCH */
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search input {
+  background-color: #f7efef;
+  margin-top: 30px;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  border: none;
+}
+/* LINE */
+
+.line {
+  width: 660px;
+  margin-top: 30px;
+}
+
+.line p {
+  background-color: #fcfbfb;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  width: 660px;
+  height: 50px;
+  margin-bottom: 6px;
+}
