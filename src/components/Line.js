@@ -10,7 +10,7 @@ const Line = ({ search }) => {
           } else if (elem.title.toLowerCase().includes(search.toLowerCase())) {
             return elem;
           } else {
-            return elem;
+            return console.log('empty');
           }
         })
         .map((elem) => {
